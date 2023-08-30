@@ -4,6 +4,24 @@ import ic_github  from './../../assets/socials/ic_github.png'
 import ic_linkedin  from './../../assets/socials/ic_linkedin.png'
 import './Home.css'
 function Home() {
+  const download = () => {
+    // URL de tu archivo PDF
+    const urlPDF = 'URL_DEL_ARCHIVO_PDF';
+
+    // Crear un elemento <a> invisible para descargar el PDF
+    const enlaceDescarga = document.createElement('a');
+    enlaceDescarga.href = urlPDF;
+    enlaceDescarga.target = '_blank'; // Abrir en una nueva ventana
+    enlaceDescarga.download = 'documento.pdf'; // Nombre del archivo
+    document.body.appendChild(enlaceDescarga);
+
+    // Hacer clic en el enlace de descarga
+    enlaceDescarga.click();
+
+    // Remover el elemento <a>
+    document.body.removeChild(enlaceDescarga);
+  };
+
   return  <div className='d-flex home'>
     <div className="greeting w-50 d-flex flex-column justify-content-between">
       <p>
@@ -12,7 +30,7 @@ function Home() {
         <br/>
         Web developer
       </p>     
-      <div role='button' className='rounded download-cv-btn d-flex align-items-center'>
+      <div onClick={download} role='button' className='rounded download-cv-btn d-flex align-items-center'>
         <p className='m-0 mx-2'>Download curriculum</p>
       <FontAwesomeIcon icon={faArrowDown} size='xs' className='mx-2'/>
       </div>      
