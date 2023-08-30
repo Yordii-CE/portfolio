@@ -1,0 +1,10 @@
+.lineBar{
+    position: absolute;
+    left: 600px;
+    display: block;
+    width: 1px;
+    height: 200vh;
+    background-color: #615F68;
+    color: yellow;
+
+}

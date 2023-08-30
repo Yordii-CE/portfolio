@@ -1,22 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import ic_github  from './../../assets/ic_github.png'
-import ic_linkedin  from './../../assets/ic_linkedin.png'
+import ic_github  from './../../assets/socials/ic_github.png'
+import ic_linkedin  from './../../assets/socials/ic_linkedin.png'
 import './Home.css'
 function Home() {
   return  <div className='d-flex home'>
-    <div className="greeting w-50">
+    <div className="greeting w-50 d-flex flex-column justify-content-between">
       <p>
         Hi<br/>
         I'm <span className="yordii">Yordii</span>
         <br/>
-        web developer
+        Web developer
       </p>     
       <div role='button' className='rounded download-cv-btn d-flex align-items-center'>
         <p className='m-0 mx-2'>Download curriculum</p>
-      <FontAwesomeIcon icon={faArrowDown} size='xm' className='mx-2'/>
-      </div>
-      
+      <FontAwesomeIcon icon={faArrowDown} size='xs' className='mx-2'/>
+      </div>      
     </div>
     <div className="about-me w-50 rounded">
       <div className="title">
@@ -36,7 +35,7 @@ function Home() {
       </div>
       <div className="aditionals d-flex align-items-center justify-content-between">
         <div className="idioms">
-          <p className='title m-0'>I speak</p>
+          <p className='title m-0'>I can speak</p>
           <div className="content">
           <p  >Spanish | English</p>
 

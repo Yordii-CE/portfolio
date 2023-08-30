@@ -1,0 +1,11 @@
+.skill{
+    background-color: #24292F;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
+}
+
+.skill > img{
+    margin-top: 10px;
+}

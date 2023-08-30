@@ -1,0 +1,11 @@
+.option{
+    font-size: 25px;
+    margin-left: 15px;
+}
+.option:hover{
+    border: 3px solid white;
+}
+.option-active{
+    
+    border: 3px solid white;
+}

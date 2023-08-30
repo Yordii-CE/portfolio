@@ -1,0 +1,42 @@
+.work{
+    border: 1px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #24292F;    
+
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+  transform-origin: center;
+}
+.work:hover {
+    background-color: linear-gradient(to bottom, #2A2342, var(--bg-app-color));
+    transform: scale(1.05);
+  }
+.work .content{
+    font-size: 24px;
+    padding-top: 20px;
+    padding-left: 70px;    
+    width: 50%;
+}
+.work .content .name{
+    font-weight: 600;
+}
+
+.work .content .description{
+    color: #6B727A;
+}
+ 
+.work .content .technologies{
+    margin-top: 40px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+  
+.work .content .technologies>span{
+    margin-right: 15px;
+}
+
+.work .content .url{
+    margin-top: 100px;
+    color: white;    
+}

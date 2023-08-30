@@ -3,10 +3,6 @@
     margin: auto;
 }
 
-.section{
-    margin-top: 20px;
-}
-
-.home, .skills{
+.home, .skills, .works{
     margin-top: 80px;
 }
