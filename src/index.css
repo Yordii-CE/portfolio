@@ -1,0 +1,13 @@
+:root {
+  --bg-app-color:#1B1F25;
+  --secondary-color:#1F6FEB;
+  --primary-color:white;
+}
+
+body{
+  font-family: mona-sans;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--bg-app-color);
+  color: var(--primary-color);
+}

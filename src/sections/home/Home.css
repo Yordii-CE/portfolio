@@ -1,0 +1,41 @@
+.greeting{
+    font-weight: bold;
+    font-size: 50px;
+}
+.yordii{
+    color: var(--secondary-color);
+}
+.download-cv-btn{
+    background-color: var(--primary-color);
+    color: #1B1F24;
+    font-size: 20px;
+    width: max-content;
+    padding: 10px;    
+}
+
+
+.about-me{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.about-me > .title{
+    letter-spacing: 4px;
+    font-size: 24px;
+}
+.about-me > .content{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6B727A;
+    text-align: justify;
+}
+
+.about-me .aditionals{
+    margin-top: 40px;
+ 
+}
+.about-me .aditionals .idioms > .content{
+        margin-top: 10px;
+    font-size: 16px;
+    color: #6B727A;
+}

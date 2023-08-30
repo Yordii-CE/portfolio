@@ -1,0 +1,12 @@
+.app{    
+    width: 1300px;
+    margin: auto;
+}
+
+.section{
+    margin-top: 20px;
+}
+
+.home, .skills{
+    margin-top: 80px;
+}
