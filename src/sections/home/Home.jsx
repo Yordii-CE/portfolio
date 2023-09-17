@@ -25,7 +25,7 @@ function Home() {
   return  <div className='d-flex home'>
     <div className="greeting w-50 d-flex flex-column justify-content-between">
       <p>
-        Hi<br/>
+        Hi2<br/>
         I'm <span className="yordii">Yordii</span>
         <br/>
         Web developer
