@@ -1,20 +1,25 @@
 import './Search.css'
 import Option from './Option'
+import { useContext } from 'react'
+import { JobContext } from '../../Context'
 function Search(){
+    const {option, setOption} = useContext(JobContext)
     const options = [
         {
-            name:"Project", 
-            onClick:()=>alert("Hola mundo")
+            isActive:option == 'Projects',
+            name:"Projects", 
+            onClick:()=>setOption('Projects')
         },
 
         {
-            isActive:true,
+            isActive:option == 'Samples',
             name:"Samples", 
-            onClick:()=>alert("Hola mundo")
+            onClick:()=>setOption('Samples')
         },
         {          
+            isActive:option == 'Others',
             name:"Others", 
-            onClick:()=>alert("Hola mundo")
+            onClick:()=>setOption('Others')
         }
     ]
     return <div className="search d-flex justify-content-end">

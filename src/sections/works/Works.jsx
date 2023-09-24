@@ -1,36 +1,26 @@
+import { useContext} from 'react';
 import './Works.css'
 import Work from "../../components/Work/Work";
 import Search from "../../components/Search/Search";
+import { JobContext } from '../../Context';
 
-import apalworkflow from './../../assets/work_screenshots/apalworkflow.png'
-function Works(){
- 
+
+function Works(){        
+    const jobContext = useContext(JobContext)       
+    
     return <div className="works rounded">  
-    <Search />
-    <Work 
-        name={"Apalworkflow"} 
-        content={"Lorem ipsum, dolor sit amet consectesa vtur rerum, pariatur aut consectetur i"}
-        image={apalworkflow}
-        technologiesName={["React", "Javascript"]}
-        urlToSite={"https:://youtube.com"}
-        >            
-    </Work>  
-    <Work 
-        name={"Apalworkflow"} 
-        content={"Lorem ipsum, dolor sit amet consectesa vtur rerum, pariatur aut consectetur i"}
-        image={apalworkflow}
-        technologiesName={["React", "Javascript"]}
-        urlToSite={"https:://youtube.com"}
-        >            
-    </Work>  
-    <Work 
-        name={"Apalworkflow"} 
-        content={"Lorem ipsum, dolor sit amet consectesa vtur rerum, pariatur aut consectetur i"}
-        image={apalworkflow}
-        technologiesName={["React", "Javascript"]}
-        urlToSite={"https:://youtube.com"}
-        >            
-    </Work>  
+        <Search />
+        {jobContext.jobData.map((d, i)=>
+            <Work 
+                key={i}
+                name={d.name}
+                content={d.content}
+                image={d.image}
+                technologiesName={d.technologiesName}
+                urlToSite={d.urlToSite}
+                >            
+            </Work>  
+        )}               
     </div>
 }
 

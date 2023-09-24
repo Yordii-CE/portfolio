@@ -4,11 +4,11 @@
   --primary-color:white;
 }
 
-body{
+body{   
   font-family: mona-sans;
   margin: 0 !important;
   padding: 0 !important;
-  background: linear-gradient(to bottom, #2A2342, var(--bg-app-color));
-
+  background: linear-gradient(to bottom, #2A2342, var(--bg-app-color));  
   color: var(--primary-color);
+  background-attachment: fixed;
 }
